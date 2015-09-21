@@ -20,6 +20,7 @@ after_success:
   - npm run semantic-release
 env:
   matrix:
-  - NODE=0.10 COMMAND=test
+  # blocked by https://github.com/semantic-release/semantic-release/pull/90
+  # - NODE=0.10 COMMAND=test
+  # - NODE=4 COMMAND=test:coverage
   - NODE=4 COMMAND=test
-  - COMMAND=test:coverage
