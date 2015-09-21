@@ -2,6 +2,11 @@
 
 > returns true if browser supports console log styling
 
+[![NPM version](https://badge.fury.io/js/browser-supports-log-styles.svg)](https://www.npmjs.com/package/browser-supports-log-styles)
+[![Build Status](https://travis-ci.org/gr2m/browser-supports-log-styles.svg?branch=master)](https://travis-ci.org/gr2m/browser-supports-log-styles)
+[![Coverage Status](https://coveralls.io/repos/gr2m/browser-supports-log-styles/badge.svg?branch=master)](https://coveralls.io/r/gr2m/browser-supports-log-styles?branch=master)
+[![Dependency Status](https://david-dm.org/gr2m/browser-supports-log-styles.svg)](https://david-dm.org/gr2m/browser-supports-log-styles)
+
 Modern browsers support CSS-based styling of console log outputs.
 See [Documentation on Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Tools/Web_Console#Styling_messages)
 
