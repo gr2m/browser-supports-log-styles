@@ -1,6 +1,11 @@
 module.exports = browserSupportsLogStyles
 
 function browserSupportsLogStyles () {
+  // relevant for browsers only
+  if (!process.browser) {
+    return false
+  }
+
   // http://stackoverflow.com/a/16459606/376773
   var isWebkit = 'WebkitAppearance' in document.documentElement.style
   // http://stackoverflow.com/a/398120/376773
