@@ -33,7 +33,7 @@
   "homepage": "https://github.com/gr2m/browser-supports-log-styles#readme",
   "devDependencies": {
     "browserify": "^11.1.0",
-    "istanbul": "^0.3.20",
+    "istanbul": "^0.4.1",
     "istanbul-coveralls": "^1.0.3",
     "mkdirp": "^0.5.1",
     "rimraf": "^2.4.3",
