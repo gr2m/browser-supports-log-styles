@@ -8,7 +8,7 @@
 [![Dependency Status](https://david-dm.org/gr2m/browser-supports-log-styles.svg)](https://david-dm.org/gr2m/browser-supports-log-styles)
 
 Modern browsers support CSS-based styling of console log outputs.
-See [Documentation on Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Tools/Web_Console#Styling_messages)
+See [Documentation on Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/API/Console#Styling_console_output)
 
 ### Usage
 
