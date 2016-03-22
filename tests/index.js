@@ -5,15 +5,15 @@ var browserSupportsLogStyles = require('../index')
 function resetBrowserEnvironment (options) {
   process.browser = true
 
-  global.window = options.window || {
+  global.window = ('window' in options) ? options.window : {
     console: {}
   }
-  global.document = options.document || {
+  global.document = ('document' in options) ? options.document : {
     documentElement: {
       style: {}
     }
   }
-  global.navigator = options.navigator || {
+  global.navigator = ('navigator' in options) ? options.navigator : {
     userAgent: ''
   }
 }
@@ -93,6 +93,26 @@ test('browserSupportsLogStyles with firebug', function (t) {
 
 test('browserSupportsLogStyles in Node', function (t) {
   delete process.browser
+
+  t.is(browserSupportsLogStyles(), false, 'is false')
+
+  t.end()
+})
+
+test('window is not defined', function (t) {
+  resetBrowserEnvironment({
+    window: undefined
+  })
+
+  t.is(browserSupportsLogStyles(), false, 'is false')
+
+  t.end()
+})
+
+test('document is not defined', function (t) {
+  resetBrowserEnvironment({
+    document: undefined
+  })
 
   t.is(browserSupportsLogStyles(), false, 'is false')
 
