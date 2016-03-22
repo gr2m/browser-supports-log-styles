@@ -1,8 +1,13 @@
 module.exports = browserSupportsLogStyles
 
 function browserSupportsLogStyles () {
-  // relevant for browsers only
+  // don’t run in node
   if (!process.browser) {
+    return false
+  }
+
+  // don’t run in non-browser environments
+  if (typeof window === 'undefined' || typeof document === 'undefined') {
     return false
   }
 
