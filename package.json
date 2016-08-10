@@ -1,7 +1,7 @@
 {
   "name": "browser-supports-log-styles",
   "description": "returns true if browser supports console log styling",
-  "main": "inde.js",
+  "main": "index.js",
   "files": [
     "index.js",
     "dist"
