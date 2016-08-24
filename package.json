@@ -41,7 +41,7 @@
     "istanbul": "^0.4.2",
     "istanbul-coveralls": "^1.0.3",
     "mkdirp": "^0.5.1",
-    "rimraf": "^2.4.3",
+    "rimraf": "^2.5.0",
     "semantic-release": "^6.2.1",
     "standard": "^8.0.0",
     "tap-spec": "^4.1.0",
