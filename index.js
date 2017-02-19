@@ -2,11 +2,7 @@ module.exports = browserSupportsLogStyles
 
 function browserSupportsLogStyles () {
   // don’t run in node
-  try {
-    if (!process.browser) {
-      return false
-    }
-  } catch (e) {
+  if (typeof process !== 'undefined' && !process.browser) {
     return false
   }
 
