@@ -3,8 +3,6 @@ var browserSupportsLogStyles = require('../index')
 
 // simulate browser environment
 function resetBrowserEnvironment (options) {
-  process.browser = true
-
   global.window = ('window' in options) ? options.window : {
     console: {}
   }
@@ -87,14 +85,6 @@ test('browserSupportsLogStyles with firebug', function (t) {
   })
 
   t.is(browserSupportsLogStyles(), true, 'is true if console.exception & .table are functions')
-
-  t.end()
-})
-
-test('browserSupportsLogStyles in Node', function (t) {
-  delete process.browser
-
-  t.is(browserSupportsLogStyles(), false, 'is false')
 
   t.end()
 })
