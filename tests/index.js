@@ -40,6 +40,25 @@ test('browserSupportsLogStyles in WebKit browser', function (t) {
   t.end()
 })
 
+test('browserSupportsLogStyles in Edge browser', function (t) {
+  resetBrowserEnvironment({
+    document: {
+      documentElement: {
+        style: {
+          WebkitAppearance: 'foo'
+        }
+      }
+    },
+    navigator: {
+      userAgent: 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.10136'
+    }
+  })
+
+  t.is(browserSupportsLogStyles(), false, 'is false')
+
+  t.end()
+})
+
 test('browserSupportsLogStyles in Firefox 30', function (t) {
   resetBrowserEnvironment({
     navigator: {
