@@ -21,10 +21,7 @@
     "presemantic-release": "npm run build",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gr2m/browser-supports-log-styles.git"
-  },
+  "repository": "github:gr2m/browser-supports-log-styles",
   "keywords": [
     "browser",
     "browserify",
@@ -32,10 +29,6 @@
   ],
   "author": "TJ Holowaychuk, Gregor Martynus",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/gr2m/browser-supports-log-styles/issues"
-  },
-  "homepage": "https://github.com/gr2m/browser-supports-log-styles#readme",
   "devDependencies": {
     "browserify": "^13.0.0",
     "istanbul": "^0.4.2",
